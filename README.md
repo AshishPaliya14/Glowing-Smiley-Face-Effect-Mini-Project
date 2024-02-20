@@ -1,1 +1,3 @@
 # Glowing-Smiley-Face-Effect-Mini-Project
+
+This repository showcases a fun mini project where I experimented with HTML and CSS to create a glowing smiley face effect. 💻😊 Using simple HTML elements and CSS styling, I transformed a basic shape into a cheerful smiley face that emits a soft, glowing aura. 🌟💡 Through this project, I explored CSS animation and transitions to achieve the glowing effect, while also honing my skills in HTML structure and styling techniques. It's a delightful example of how creativity and code can come together to bring a touch of joy to web development! 💫🎨 #HTML #CSS #MiniProject #SmileyFaceEffect 🌈🖥️
