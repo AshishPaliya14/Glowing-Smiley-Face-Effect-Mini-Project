@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-height: 100vh;
+  background-color: #222;
+  overflow: hidden;
+}
+
+:root {
+  --clr1: #ff0087;
+  --clr2: #01ff5f;
+  --clr3: #00bfff;
+  --clr4: #ffac1c;
+}
+
+label {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+label input {
+  appearance: none;
+}
+
+label .face,
+.face1,
+.face2,
+.face3 {
+  position: absolute;
+  inset: 0;
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  mix-blend-mode: lighten;
+  transition: 0.5s;
+}
+
+label input:checked ~ .face {
+  background: var(--clr1);
+  z-index: 500;
+  filter: drop-shadow(0 0 50px var(--clr1)) drop-shadow(0 0 100px var(--clr1))
+    drop-shadow(0 0 150px var(--clr1));
+}
+
+label input:checked ~ .face1 {
+  background: var(--clr2);
+  z-index: 500;
+  filter: drop-shadow(0 0 50px var(--clr2)) drop-shadow(0 0 100px var(--clr2))
+    drop-shadow(0 0 150px var(--clr2));
+}
+
+label input:checked ~ .face2 {
+  background: var(--clr3);
+  z-index: 500;
+  filter: drop-shadow(0 0 50px var(--clr3)) drop-shadow(0 0 100px var(--clr3))
+    drop-shadow(0 0 150px var(--clr3));
+}
+
+label input:checked ~ .face3 {
+  background: var(--clr4);
+  z-index: 500;
+  filter: drop-shadow(0 0 50px var(--clr4)) drop-shadow(0 0 100px var(--clr4))
+    drop-shadow(0 0 150px var(--clr4));
+}
+
+label .face::before {
+  content: " ";
+  position: absolute;
+  top: 60px;
+  left: 45px;
+  width: 15px;
+  height: 15px;
+  background: #111;
+  opacity: 0.5;
+  border-radius: 50%;
+  box-shadow: 45px 0 0 #111;
+}
+
+label .face1::before {
+  content: " ";
+  position: absolute;
+  top: 60px;
+  left: 45px;
+  width: 15px;
+  height: 15px;
+  background: #111;
+  opacity: 0.5;
+  border-radius: 50%;
+  box-shadow: 45px 0 0 #111;
+}
+
+label .face2::before {
+  content: " ";
+  position: absolute;
+  top: 60px;
+  left: 45px;
+  width: 15px;
+  height: 15px;
+  background: #111;
+  opacity: 0.5;
+  border-radius: 50%;
+  box-shadow: 45px 0 0 #111;
+}
+
+label .face3::before {
+  content: " ";
+  position: absolute;
+  top: 60px;
+  left: 45px;
+  width: 15px;
+  height: 15px;
+  background: #111;
+  opacity: 0.5;
+  border-radius: 50%;
+  box-shadow: 45px 0 0 #111;
+}
+
+label .face::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+  width: 40px;
+  height: 8px;
+  border-radius: 8px;
+  background: #111;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+label .face1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+  width: 40px;
+  height: 8px;
+  border-radius: 8px;
+  background: #111;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+label .face2::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+  width: 40px;
+  height: 8px;
+  border-radius: 8px;
+  background: #111;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+label .face3::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 45px;
+  width: 40px;
+  height: 8px;
+  border-radius: 8px;
+  background: #111;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+label input:checked ~ .face::after {
+  width: 40px;
+  height: 20px;
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: translateX(-50%) translateY(10px);
+}
+
+label input:checked ~ .face1::after {
+  width: 40px;
+  height: 20px;
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: translateX(-50%) translateY(10px);
+}
+
+label input:checked ~ .face2::after {
+  width: 40px;
+  height: 20px;
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: translateX(-50%) translateY(10px);
+}
+
+label input:checked ~ .face3::after {
+  width: 40px;
+  height: 20px;
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  transform: translateX(-50%) translateY(10px);
+}
